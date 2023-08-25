@@ -1,5 +1,12 @@
 {
   "name": "paragonie/paserk-wrap-aws-kms",
+  "authors": [{
+    "name": "Paragon Initiative Enterprises",
+    "email": "info@paragonie.com",
+    "homepage": "https://paragonie.com"
+  }],
+  "description": "Use AWS KMS for key-wrapping with PASERK",
+  "license": "ISC",
   "autoload": {
     "psr-4": {
       "ParagonIE\\Paserk\\Operations\\Wrap\\": "src"
