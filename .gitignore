@@ -1,0 +1,7 @@
+/.phpunit.cache
+/composer.lock
+/composer.phar
+/data/*.cache
+/data/*.json
+/data/*.pem
+/vendor
