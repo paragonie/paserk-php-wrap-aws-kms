@@ -1,5 +1,11 @@
 # PASERK Wrapper for AWS KMS
 
+[![Build Status](https://github.com/paragonie/paserk-php-wrap-aws-kms/actions/workflows/ci.yml/badge.svg)](https://github.com/paragonie/paserk-php/actions)
+[![Latest Stable Version](https://poser.pugx.org/paragonie/paserk-wrap-aws-kms/v/stable)](https://packagist.org/packages/paragonie/paserk-wrap-aws-kms)
+[![Latest Unstable Version](https://poser.pugx.org/paragonie/paserk-wrap-aws-kms/v/unstable)](https://packagist.org/packages/paragonie/paserk-wrap-aws-kms)
+[![License](https://poser.pugx.org/paragonie/paserk-wrap-aws-kms/license)](https://packagist.org/packages/paragonie/paserk-wrap-aws-kms)
+[![Downloads](https://img.shields.io/packagist/dt/paragonie/paserk-wrap-aws-kms.svg)](https://packagist.org/packages/paragonie/paserk-wrap-aws-kms)
+
 Integrates PASERK with AWS KMS for key-wrapping. **Requires PHP 8.1 or newer.**
 
 This repository is an extension of [PASERK for PHP](https://github.com/paragonie/paserk-php).

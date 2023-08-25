@@ -1,5 +1,5 @@
 {
-  "name": "paragonie/paswrk-wrap-aws-kms",
+  "name": "paragonie/paserk-wrap-aws-kms",
   "autoload": {
     "psr-4": {
       "ParagonIE\\Paserk\\Operations\\Wrap\\": "src"
@@ -19,5 +19,13 @@
     "paragonie/certainty": "^2",
     "phpunit/phpunit": "^9",
     "vimeo/psalm": "^4"
+  },
+  "scripts": {
+    "full-test": [
+      "@static-analysis",
+      "@test"
+    ],
+    "static-analysis": "psalm",
+    "test": "phpunit"
   }
 }
