@@ -85,6 +85,20 @@ class AwsKmsTest extends TestCase
     /**
      * @dataProvider wrapProvider
      */
+    public function testEncryptionContext(BaseSymmetricKey|AsymmetricSecretKey $key)
+    {
+        $random = Hex::encode(random_bytes(32));
+        $awsKms = $this->getAwsKms($key->getProtocol());
+        $awsKms->setEncryptionContext(['test' => $random]);
+        $this->assertSame(
+            ['test' => $random],
+            $awsKms->getEncryptionContext()
+        );
+    }
+
+    /**
+     * @dataProvider wrapProvider
+     */
     public function testWrapUnwrap(BaseSymmetricKey|AsymmetricSecretKey $key)
     {
         $wrapper = new Wrap($this->getAwsKms($key->getProtocol()));

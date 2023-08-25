@@ -95,6 +95,11 @@ class AwsKms implements WrapInterface
         return $this;
     }
 
+    public function getEncryptionContext(): array
+    {
+        return $this->encryptionContext;
+    }
+
     /**
      * @param ProtocolInterface $given
      * @throws PaserkException
