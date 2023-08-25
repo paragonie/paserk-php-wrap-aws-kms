@@ -62,7 +62,7 @@ class AwsKms implements WrapInterface
 
         $header = implode('.', array_slice($pieces, 0, 3)) . '.';
         if (!hash_equals($pieces[2], self::customId())) {
-            throw new PaserkException('Key is not wrapped with the PIE key-wrapping protocol');
+            throw new PaserkException('Key is not wrapped with the AWS KMS key-wrapping protocol');
         }
 
         // Call KMS to get the plaintext
