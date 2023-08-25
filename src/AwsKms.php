@@ -89,9 +89,9 @@ class AwsKms implements WrapInterface
         throw new PaserkException('Unknown wrapping type: ' . $pieces[1]);
     }
 
-    public function setEncryptionContext(array $encryptionCotnext = []): static
+    public function setEncryptionContext(array $encryptionContext = []): static
     {
-        $this->encryptionContext = $encryptionCotnext;
+        $this->encryptionContext = $encryptionContext;
         return $this;
     }
 
